@@ -1,0 +1,67 @@
+{% extends "blog/base.html" %}
+
+{% block content %}
+<!--<div class="container">
+	<div class="row">
+	-->
+		<div class="col-md-1">
+
+		</div>
+		<div class="col-md-6">
+			<div class="main">
+				<div class="modal-content" style="border:none;">
+        <div style="padding: 0 10px;">
+           <h4 class="modal-title" style="border-bottom: 1px solid lightgrey;" >Join Today</h4>
+        </div>
+        <div class="modal-body">
+          <label>Username*</label>
+          <br><input type="text" name="name">
+          <br><p style="font-size: 12px;"><strong>Required:</strong>150 characters or fewers. Letters, Digits and @/./+/-/_ only.</p>
+          <label>Email*</label>
+          <br><input type="email" name="Email">
+          <label>Password*</label>
+          <br><input type="Password" name="pass">
+          <ul style="font-size: 11px;word-spacing: 2px;">
+          	<li>Your password can't be too similar to your other personal informartion.</li>
+          	<li>Your password must contain atleast 8 characters.</li>
+          	<li>Your password can't be a commonly used password.</li>
+          	<li>Your can't be completely numeric.</li>
+          </ul>
+          <label>Confirm-Password*</label>
+          <br><input type="Password" name="conpass">
+          <p style="font-size: 12px;">Enter the same password as before, verification.</p>
+
+          <button type="button" class="btn btn-outline-info" style="width: 20%;max-width: 20%;">Sign Up</button>
+        </div>
+
+        <div class="modal-footer" style="margin-left: 1rem;margin-right: 1rem;">
+        	<p style="position: absolute;left: 6px;word-wrap: break-word;padding-left: 0.5rem;">Already Have an account? <a href="#" data-target="#form" data-toggle="modal" style="color: lightblue;">Log In </a></p>
+        </div>
+      </div>
+			</div>
+		</div>
+
+  <div class="modal fade" id="form" role="dialog" style="padding: 2rem;">
+    <div class="modal-dialog" style="width: 100%;max-width: 50%;max-height: auto;min-width: 25%;">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div style="padding: 0 10px;">
+        	 <h4 class="modal-title" style="border-bottom: 1px solid lightgrey;" >Log In</h4>
+        </div>
+        <div class="modal-body">
+          <label>Username</label>
+          <br><input type="text" name="name">
+          <label>Password</label>
+          <br><input type="Password" name="pass">
+          <button type="button" class="btn btn-outline-info" style="width: 20%;max-width: 20%;">Log In</button>
+        </div>
+
+      </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+
+
